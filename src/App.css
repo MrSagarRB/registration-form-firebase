@@ -1,0 +1,69 @@
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #00C9FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+padding:50px;
+overflow: hidden;
+}
+
+form{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 50px;
+  padding: 40px;
+  border-radius:5px;
+  box-shadow: 0 0px 0px rgba(0,0,0,0.16), 0 0px 3px rgba(0,0,0,0.23);
+ background-color:#fff;
+ margin-top: 30px;
+}
+.Radio{
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+}
+
+.check{
+  display: flex;
+  gap: 20px;
+}
+
+.photo{
+  display: flex;
+  flex-direction: column;
+  gap:10px
+
+}
+
+.btn{
+  display: flex;
+  gap: 10px;
+}
+.mobile_msg{
+  display:none;
+}
+.container{
+  display: flex;
+  gap: 10px
+}
+
+
+
+
+@media (max-width: 320px) {
+
+form{
+  display: none;
+}
+
+  .mobile_msg{
+    display:inline;
+    text-align: center;
+    margin-top:20px;
+  }
+}
+
